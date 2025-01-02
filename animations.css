@@ -1,0 +1,105 @@
+:root {
+    --animm-time: 1.2s;
+}
+
+.top-anim {
+    animation-duration: var(--animm-time);
+    animation-name: slide-in-top;
+}
+
+.middle-anim {
+    animation-duration: var(--animm-time);
+    animation-name: slide-in-middle;
+}
+
+.bottom-anim {
+    animation-duration: var(--animm-time);
+    animation-name: slide-in-bottom;
+}
+
+.myphoto-container {
+    animation-duration: calc(var(--animm-time) * 2);
+    animation-name: slide-in-myphoto;
+}
+
+.name-container {
+    animation-duration: calc(var(--animm-time) * 3);
+    animation-name: slide-in-name;
+}
+
+.about-container {
+    animation-duration: calc(var(--animm-time) * 3);
+    animation-name: slide-in-about;
+}
+
+@keyframes slide-in-name {
+    0% {
+        translate: 30vw -140vh;
+    }
+
+    66% {
+        translate: 30vw -140vh;
+    }
+
+    100% {
+        translate: 0 0;
+    }
+}
+
+@keyframes slide-in-about {
+    0% {
+        translate: 0 140vh;
+    }
+
+    66% {
+        translate: 0 140vh;
+    }
+
+    100% {
+        translate: 0 0;
+    }
+}
+
+@keyframes slide-in-myphoto {
+    0% {
+        translate: 30vw 140vh;
+    }
+
+    50% {
+        translate: 30vw 140vh;
+    }
+
+    100% {
+        translate: 0 0;
+    }
+}
+
+@keyframes slide-in-top {
+    0% {
+        translate: -120vw -40vh;
+    }
+
+    100% {
+        translate: 0 0;
+    }
+}
+
+@keyframes slide-in-middle {
+    0% {
+        translate: -120vw 0;
+    }
+
+    100% {
+        translate: 0 0;
+    }
+}
+
+@keyframes slide-in-bottom {
+    0% {
+        translate: -120vw 40vh;
+    }
+
+    100% {
+        translate: 0 0
+    }
+}
